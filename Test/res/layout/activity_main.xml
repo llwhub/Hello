@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.llw.test.MainActivity" >
 
     <Button 
@@ -9,4 +10,16 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/begin"/>
+    <Button
+        android:id="@+id/xml"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试Xml解析"
+        />
+    <Button
+        android:id="@+id/sensor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试传感器"
+        />
 </LinearLayout>

@@ -1,11 +1,10 @@
 package com.llw.test;
 
+
 import android.app.Activity;	
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -17,6 +16,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		Button btn=(Button)findViewById(R.id.begin);
+		Button btnXml=(Button)findViewById(R.id.xml);
+		Button btnSensor=(Button)findViewById(R.id.sensor);
 		btn.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -27,6 +28,22 @@ public class MainActivity extends Activity {
 				Uri uriBrowsers=Uri.parse("http://www.baidu.com");
 				intent.setData(uriBrowsers);
 				intent.setClassName("com.android.browser", "com.android.browser.BrowserActivity");
+				startActivity(intent);
+			}
+		});
+		btnXml.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent=new Intent(MainActivity.this,XmlActivity.class);
+				startActivity(intent);
+			}
+		});
+		btnSensor.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent=new Intent(MainActivity.this,SensorActivity.class);
 				startActivity(intent);
 			}
 		});
