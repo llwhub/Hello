@@ -1,7 +1,7 @@
 package com.llw.test;
 
 
-import android.app.Activity;	
+import android.app.Activity;		
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,6 +18,8 @@ public class MainActivity extends Activity {
 		Button btn=(Button)findViewById(R.id.begin);
 		Button btnXml=(Button)findViewById(R.id.xml);
 		Button btnSensor=(Button)findViewById(R.id.sensor);
+		Button btnScrollLayout=(Button)findViewById(R.id.scrollLayout);
+		Button btnGreenDroid=(Button)findViewById(R.id.greenDroid);
 		btn.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -44,6 +46,22 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent intent=new Intent(MainActivity.this,SensorActivity.class);
+				startActivity(intent);
+			}
+		});
+		btnScrollLayout.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent=new Intent(MainActivity.this,ScrollLayoutActivity.class);
+				startActivity(intent);
+			}
+		});
+		btnGreenDroid.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent intent=new Intent(MainActivity.this,GreenDroidActivity.class);
 				startActivity(intent);
 			}
 		});

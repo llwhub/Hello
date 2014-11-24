@@ -22,4 +22,16 @@
         android:layout_height="wrap_content"
         android:text="测试传感器"
         />
+    <Button
+        android:id="@+id/scrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="scrolLayout测试"
+        />
+    <Button
+        android:id="@+id/greenDroid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="greenDroid测试"
+        />
 </LinearLayout>
